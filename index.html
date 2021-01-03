@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <title>Random Advice</title>
+    <style>
+      body {
+        background: rgb(109, 58, 226);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container text-center bg-light bg-gradient mt-5 rounded-3">
+      <h1 class="display-1 pt-5">Advice Generator</h1>
+      <div class="p-5">
+        <form class="pt-3">
+          <label for="keyword" class="form-label my-1 fs-2"
+            >Search a keyword for advice:</label
+          >
+          <input
+            type="text"
+            class="input form-control my-3 w-50 m-auto text-center"
+          />
+          <button
+            type="submit"
+            id="search"
+            class="button btn btn-primary btn-lg mx-2"
+          >
+            Search
+          </button>
+          <button
+            type="submit"
+            id="refresh"
+            class="button btn btn-danger btn-lg"
+            hidden
+          >
+            Refresh !
+          </button>
+          <h5 class="mt-5">Or try some random advice...</h5>
+          <button
+            type="submit"
+            id="random"
+            class="button btn btn-lg btn-dark mt-3"
+          >
+            ? Random ?
+          </button>
+        </form>
+      </div>
+
+      <figure class="my-5 text-center pb-5 px-5">
+        <blockquote class="blockquote fs-2">
+          <p
+            id="output"
+            class="fst-italic bg-primary bg-gradient text-white rounded-3"
+          ></p>
+        </blockquote>
+      </figure>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
