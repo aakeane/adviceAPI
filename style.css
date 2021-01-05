@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap");
+
+#main-card {
+  background: linear-gradient(#f8afa6, #fadcd9, #f9f1f0);
+}
+
+#output {
+  font-family: "Noto Serif", serif;
+  font-size: 1.5rem;
+  /* padding: 10px; */
+  background: #cac5f7;
+}

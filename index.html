@@ -9,18 +9,14 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./style.css" />
     <title>Random Advice</title>
-    <style>
-      body {
-        background: rgb(109, 58, 226);
-      }
-    </style>
   </head>
   <body>
-    <div class="container text-center bg-light bg-gradient mt-5 rounded-3">
+    <div id="main-card" class="container text-center mt-5 rounded-3">
       <h1 class="display-1 pt-5">Advice Generator</h1>
       <div class="p-5">
-        <form class="pt-3">
+        <form id="form" class="pt-3">
           <label for="keyword" class="form-label my-1 fs-2"
             >Search a keyword for advice:</label
           >
@@ -56,10 +52,7 @@
 
       <figure class="my-5 text-center pb-5 px-5">
         <blockquote class="blockquote fs-2">
-          <p
-            id="output"
-            class="fst-italic bg-primary bg-gradient text-white rounded-3"
-          ></p>
+          <p id="output" class="fst-italic rounded-3"></p>
         </blockquote>
       </figure>
     </div>
